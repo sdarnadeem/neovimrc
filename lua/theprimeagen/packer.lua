@@ -42,8 +42,10 @@ return require("packer").startup(function(use)
 				ts_update()
 			end,}
   use("nvim-treesitter/playground")
-
-  use("~/personal/harpoon")
+  use({
+      "ThePrimeagen/harpoon",
+      branch = "harpoon2"
+  })
 
   use("theprimeagen/vim-be-good")
   use("theprimeagen/refactoring.nvim")
